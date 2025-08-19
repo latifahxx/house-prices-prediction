@@ -15,7 +15,7 @@ Accurate house price prediction can help:
 - **train.csv**: Training data with house features and target variable (`SalePrice`).  
 - **test.csv**: Test data with house features only.  
 - **sample_submission.csv**: Template for submitting predictions.
-- **To Download the dataset**: [Kaggle House Prices Competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
+- **To download the dataset**: [Kaggle House Prices Competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
 
 
 ## Libraries & Tools
