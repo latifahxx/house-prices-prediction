@@ -1,85 +1,72 @@
-House Prices Prediction
-Overview
+# 🏡 House Prices Prediction
 
-This project predicts the sale price (SalePrice) of houses using machine learning. The model estimates prices for houses in the test dataset based on features provided in the training data.
+## Overview
+This project predicts the **sale price (`SalePrice`)** of houses using machine learning.  
+The model estimates prices for houses in the test dataset based on features from the training data.  
 
-Why This Project is Useful
+## Why This Project is Useful
+Accurate house price prediction can help:
 
-Accurate house price prediction helps:
+- Buyers and sellers estimate fair market value.  
+- Real estate professionals make smarter decisions.  
+- Data science learners practice regression, feature engineering, and model evaluation.
 
-Buyers and sellers estimate fair market value.
+## Dataset
+- **train.csv**: Training data with house features and target variable (`SalePrice`).  
+- **test.csv**: Test data with house features only.  
+- **sample_submission.csv**: Template for submitting predictions.  
 
-Real estate professionals make informed decisions.
+## Libraries & Tools
+- **Python**: `numpy`, `pandas`, `math`  
+- **Data Visualization**: `matplotlib`, `seaborn`  
+- **Machine Learning**: `scikit-learn`  
 
-Data science learners practice regression, feature engineering, and model evaluation.
+## Project Workflow
+1. **Data Import & Exploration**  
+   Load datasets, inspect shapes, and explore distributions.
 
-Dataset
+2. **Data Cleaning**  
+   - Remove columns with many missing values.  
+   - Fill missing numerical values with the mean.  
+   - Encode categorical features using one-hot encoding.
 
-train.csv: Training data with house features and target variable (SalePrice).
+3. **Feature Selection & Alignment**  
+   Separate features from the target variable and align test set columns.
 
-test.csv: Test data with house features only.
+4. **Train/Test Split**  
+   Split training data into **training (80%)** and **validation (20%)** sets.
 
-sample_submission.csv: Template for submitting predictions.
+5. **Model Training**  
+   Train a **Linear Regression** model on the training data.
 
-Libraries & Tools
+6. **Model Evaluation**  
+   Evaluate model performance using **MAE, MSE, RMSE, and R² score**.  
 
-Python: numpy, pandas, math
+   Visualize predictions with a scatter plot:
 
-Data visualization: matplotlib, seaborn
+   ![Actual vs Predicted](images/actual_vs_predicted.png)
 
-Machine learning: scikit-learn
+7. **Prediction & Export**  
+   Generate predictions for the test set and export results to `predictions.xlsx`.  
 
-Project Workflow
+## How to Get Started
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/latifahxx/house-prices-prediction.git
 
-Data Import & Exploration
-Load datasets, inspect shapes, and explore distributions.
-
-Data Cleaning
-
-Remove columns with high missing values.
-
-Fill missing numerical values with mean.
-
-Encode categorical features using one-hot encoding.
-
-Feature Selection & Alignment
-Separate features from target variable and align test set columns.
-
-Train/Test Split
-Split training data into training (80%) and validation (20%) sets.
-
-Model Training
-Train a Linear Regression model on training data.
-
-Evaluation
-Assess performance with MAE, MSE, RMSE, and R² score.
-Visualize actual vs predicted values.
-
-Prediction & Export
-Generate predictions for the test set and export results to predictions.xlsx.
-
-How to Get Started
-
-Clone the repository:
-
-git clone https://github.com/latifahxx/house-prices-prediction.git
-
-
-Install required libraries:
-
+## Install required libraries:
+   ```bash
 pip install numpy pandas matplotlib seaborn scikit-learn openpyxl
-
+```
 
 Place the dataset files (train.csv, test.csv, sample_submission.csv) in the project folder.
 
 Run the main notebook or script to train the model and generate predictions.
 
-Contribution
 
+## Contribution
 Contributions are welcome! You can:
 
-Suggest improvements to the model or preprocessing steps.
-
-Report issues or bugs.
-
-Add more visualization or feature engineering techniques.
+- Suggest improvements to the model or preprocessing steps.
+- Report issues or bugs.
+- Add more visualizations or feature engineering techniques.
